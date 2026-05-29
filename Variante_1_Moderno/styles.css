@@ -1,0 +1,149 @@
+/* Variante 1 - Estilos básicos */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e3f2fd;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1976d2;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #1976d2;
+  outline: none;
+}
+
+.mensaje {
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
+  min-height: 15px;
+}
+
+.mensaje.error {
+  color: #d32f2f;
+}
+
+.mensaje.exito {
+  color: #388e3c;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #e8f5e9;
+  border-radius: 4px;
+  margin: 15px 0;
+}
+
+input.campo-error {
+  border-color: #d32f2f;
+}
+
+input.campo-valido {
+  border-color: #388e3c;
+}
+
+.botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#btnEnviar {
+  background-color: #1976d2;
+}
+
+#btnPreguntas {
+  background-color: #757575;
+}
+
+.respuestas-box {
+  margin-top: 25px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+.respuestas-box h2 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.respuesta-item {
+  font-size: 14px;
+  color: #555;
+  padding: 8px;
+  margin-bottom: 5px;
+  background-color: white;
+  border-left: 3px solid #1976d2;
+}
+
+.respuesta-item strong {
+  color: #1976d2;
+}
+
+.respuesta-cancelada {
+  color: #f57c00;
+  font-style: italic;
+}

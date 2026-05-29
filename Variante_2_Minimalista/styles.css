@@ -1,0 +1,158 @@
+/* Variante 2 - Estilo Simple */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8f5e9;
+  padding: 30px;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 25px;
+  border: 2px solid #4caf50;
+}
+
+header {
+  margin-bottom: 20px;
+  border-bottom: 3px solid #4caf50;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 22px;
+  color: #2e7d32;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 13px;
+  color: #666;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+.error-msg,
+.success-msg {
+  display: block;
+  font-size: 12px;
+  margin-top: 4px;
+  min-height: 15px;
+}
+
+.error-msg {
+  color: #d32f2f;
+}
+
+.success-msg {
+  color: #2e7d32;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  background-color: #c8e6c9;
+  margin: 12px 0;
+}
+
+input.invalido {
+  border-color: #d32f2f;
+}
+
+input.valido {
+  border-color: #4caf50;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #4caf50;
+}
+
+.btn-primary:hover {
+  background-color: #388e3c;
+}
+
+.btn-secondary {
+  background-color: #9e9e9e;
+}
+
+.btn-secondary:hover {
+  background-color: #757575;
+}
+
+.respuestas {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 3px solid #4caf50;
+}
+
+.respuestas h2 {
+  font-size: 16px;
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+.respuesta-linea {
+  padding: 8px;
+  font-size: 13px;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #f5f5f5;
+  margin-bottom: 5px;
+}
+
+.respuesta-linea strong {
+  color: #4caf50;
+}
+
+.no-respuesta {
+  color: #ff9800;
+  font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .acciones {
+    flex-direction: column;
+  }
+}

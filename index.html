@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripción al Curso</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Formulario de Inscripción</h1>
+    <p class="subtitle">Completá los siguientes datos para inscribirte al curso.</p>
+
+    <form id="formInscripcion" novalidate>
+
+      <!-- Campo: Nombre y Apellido -->
+      <div class="form-group">
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input
+          type="text"
+          id="nombreApellido"
+          placeholder="Ej: Juan Pérez"
+          autocomplete="off"
+        />
+        <span class="mensaje" id="errorNombre"></span>
+      </div>
+
+      <!-- Campo: DNI -->
+      <div class="form-group">
+        <label for="dni">DNI</label>
+        <input
+          type="text"
+          id="dni"
+          placeholder="Ej: 12345678"
+          maxlength="8"
+          autocomplete="off"
+        />
+        <span class="mensaje" id="errorDNI"></span>
+      </div>
+
+      <!-- Campo: Fecha de Nacimiento -->
+      <div class="form-group">
+        <label for="fechaNacimiento">Fecha de Nacimiento</label>
+        <input
+          type="date"
+          id="fechaNacimiento"
+        />
+        <span class="mensaje" id="errorFecha"></span>
+      </div>
+
+      <!-- Botones -->
+      <div class="botones">
+        <button type="submit" id="btnEnviar">Enviar</button>
+        <button type="button" id="btnPreguntas">Preguntas</button>
+      </div>
+
+      <!-- Mensaje de éxito general -->
+      <div id="mensajeExito" class="mensaje"></div>
+
+    </form>
+
+    <!-- Sección de respuestas de preguntas progresivas -->
+    <div id="respuestasContainer" class="respuestas-box" style="display: none;">
+      <h2>Tus Respuestas</h2>
+      <div id="respuestasContenido"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* ===========================
+   Reset y base
+=========================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* ===========================
+   Contenedor principal
+=========================== */
+.container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 3rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: #7f8c8d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* ===========================
+   Grupos de campo
+=========================== */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.4rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 0.4rem;
+}
+
+.form-group input {
+  padding: 0.65rem 0.9rem;
+  border: 1.5px solid #bdc3c7;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: border-color 0.25s;
+  outline: none;
+}
+
+.form-group input:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+}
+
+/* ===========================
+   Mensajes de validación
+=========================== */
+.mensaje {
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  min-height: 1.1rem;
+  display: block;
+}
+
+.mensaje.error {
+  color: #e74c3c;
+}
+
+.mensaje.exito {
+  color: #27ae60;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Borde rojo en input con error */
+input.campo-error {
+  border-color: #e74c3c;
+  background-color: #fdf2f2;
+}
+
+/* Borde verde en input válido */
+input.campo-valido {
+  border-color: #27ae60;
+  background-color: #f2fdf5;
+}
+
+/* ===========================
+   Botones
+=========================== */
+.botones {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+button {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#btnEnviar {
+  background-color: #3498db;
+  color: #ffffff;
+}
+
+#btnEnviar:hover {
+  background-color: #2980b9;
+}
+
+#btnPreguntas {
+  background-color: #8e44ad;
+  color: #ffffff;
+}
+
+#btnPreguntas:hover {
+  background-color: #7d3c98;
+}
+
+/* ===========================
+   Caja de respuestas
+=========================== */
+.respuestas-box {
+  margin-top: 2rem;
+  background-color: #f8f9fa;
+  border: 1.5px solid #dee2e6;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.respuestas-box h2 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dee2e6;
+  padding-bottom: 0.5rem;
+}
+
+.respuesta-item {
+  font-size: 0.95rem;
+  color: #34495e;
+  padding: 0.4rem 0;
+  border-bottom: 1px dashed #ced4da;
+}
+
+.respuesta-item:last-child {
+  border-bottom: none;
+}
+
+.respuesta-item strong {
+  color: #2c3e50;
+}
+
+.respuesta-cancelada {
+  color: #e67e22;
+  font-style: italic;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+@media (max-width: 480px) {
+  .container {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .botones {
+    flex-direction: column;
+  }
+}

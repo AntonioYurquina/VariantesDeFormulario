@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripción al Curso</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="card">
+      
+      <div class="header-dark">
+        <h1>Formulario de Inscripción</h1>
+        <p class="tagline">Completá tus datos para unirte al curso</p>
+      </div>
+
+      <form id="formInscripcion" class="form-dark" novalidate>
+
+        <div class="input-group">
+          <label for="nombreApellido">
+            Nombre y Apellido
+          </label>
+          <input
+            type="text"
+            id="nombreApellido"
+            placeholder="Ej: María González"
+            autocomplete="off"
+          />
+          <span class="error-text" id="errorNombre"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="dni">
+            Documento Nacional de Identidad
+          </label>
+          <input
+            type="text"
+            id="dni"
+            placeholder="Ej: 40123456"
+            maxlength="8"
+            autocomplete="off"
+          />
+          <span class="error-text" id="errorDNI"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="fechaNacimiento">
+            Fecha de Nacimiento
+          </label>
+          <input
+            type="date"
+            id="fechaNacimiento"
+          />
+          <span class="error-text" id="errorFecha"></span>
+        </div>
+
+        <div id="mensajeExito" class="success-banner"></div>
+
+        <div class="button-group">
+          <button type="submit" id="btnEnviar" class="btn-primary">
+            Enviar Formulario
+          </button>
+          <button type="button" id="btnPreguntas" class="btn-outline">
+            Preguntas Adicionales
+          </button>
+        </div>
+
+      </form>
+
+      <div id="respuestasContainer" class="respuestas-dark" style="display: none;">
+        <h3>Respuestas Registradas</h3>
+        <div id="respuestasContenido"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
