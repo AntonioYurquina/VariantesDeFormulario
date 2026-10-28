@@ -12,6 +12,7 @@ body {
   background-color: #f0f4f8;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 2rem;
@@ -200,4 +201,25 @@ button:active {
   .botones {
     flex-direction: column;
   }
+}
+
+/* ===========================
+   Crédito al pie
+=========================== */
+.credito {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #53606e;
+  text-align: center;
+}
+
+.credito a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.credito a:hover,
+.credito a:focus-visible {
+  color: #2c3e50;
 }

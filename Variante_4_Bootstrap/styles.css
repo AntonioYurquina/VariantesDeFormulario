@@ -74,3 +74,14 @@ body {
   color: #fd7e14;
   font-style: italic;
 }
+
+/* Credito al pie (tamano y color salen de las clases de Bootstrap) */
+.credito a {
+  color: inherit;
+  text-underline-offset: 2px;
+}
+
+.credito a:hover,
+.credito a:focus-visible {
+  color: #212529;
+}
